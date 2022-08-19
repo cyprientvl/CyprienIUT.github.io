@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+
+	<title>Iut projet</title>
+</head>
+<body>
+
+	<div id="nav">
+		
+		<div id="logo">
+			<img src="img/logo.png">
+			<h1>Iut informatique</h1>
+		</div>
+
+		<div class="navigation">
+			
+			<div class="home">
+				<div class="main">
+					<ion-icon name="home"></ion-icon>
+					<a href="index.html">
+						<p>Home</p>
+					</a>
+					
+				</div>
+				<div class="information">
+					<ion-icon name="document"></ion-icon>
+					<a href="index.html">
+						<p>Information</p>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="langage">
+				<div class="zone">
+					
+					<div class="title">
+						<p>Language</p>
+						<ion-icon name="arrow-dropright"></ion-icon>
+					</div>
+					<a href="java.html">
+						<div class="java">
+							<span class="s1"></span>
+							<span class="s2"></span>
+							<div class="red"></div>
+							<p>Java</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="html">
+							<span class="s3"></span>
+							<span class="s4"></span>
+							<div class="blue"></div>
+							<p>HTML</p>
+						</div>
+					</a>
+					<a href="js.html">
+						<div class="js">
+							<span class="s5"></span>
+							<span class="s6"></span>
+							<div class="jaune"></div>
+							<p>JS</p>
+						</div>
+					</a>
+					<a href="c.html">
+						<div class="c">
+							<span class="s7"></span>
+							<span class="s8"></span>
+							<div class="gris"></div>
+							<p>C</p>
+						</div>
+					</a>
+
+				</div>
+				
+			</div>
+
+			<div class="exo">
+				<div class="title">
+					<p>Exercice</p>
+					<ion-icon name="arrow-dropright"></ion-icon>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="frame">
+		
+		<div id="search">
+			<div>
+				<ion-icon name="search"></ion-icon>
+				<form>
+					<input type="text" name="s" placeholder="Rechercher">
+				</form>
+			</div>
+		</div>
+
+		<div class="titletop">
+
+			<h3>/</h3>
+			<h2>HTML</h2>
+		
+		</div>
+
+		<div class="mid">
+			
+
+
+
+
+
+
+			<div class="content" name="test">
+				
+				<div class="contents">
+					
+					<div class="parte1">
+						
+						<div class="tag">
+							
+							<p class="tagbleu">#HTML</p>
+							<p class="tagvert">#start</p>
+
+						</div>
+
+						<p class="ptitre">Starter pack :</p>
+						<p class="ps">- html pack debut<br></p>
+
+						<div class="align">
+							<img src="img/html.jpg">	
+							<ion-icon class="ex" name="exit"></ion-icon>
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+			<div class="content" name="test">
+				
+				<div class="contents">
+					
+					<div class="parte1">
+						
+						<div class="tag">
+							
+							<p class="tagrouge">#PHP</p>
+							<p class="tagvert">#start</p>
+
+						</div>
+
+						<p class="ptitre">code conex db :</p>
+						<p class="ps">- php connextion db<br></p>
+
+						<div class="align">
+							<img src="img/php.png">	
+							<ion-icon class="ex" name="exit"></ion-icon>
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		
+
+		
+			
+
+
+		<div class="parte2">
+			<div class="cadre">
+				<h1>Starter:</h1>
+				
+				<p>Document pour demarer un site internet et avoir<br>
+					les ion-icon est les fade
+				</p>
+
+			</div>
+
+			<div class="btn">
+				<p>Close</p>
+				
+				<a href="document/starter.txt" target="_BLANK">voir le fichier</a>
+				<a href="document/starter.txt" download>telecharger</a>
+
+			</div>
+
+		</div>
+
+
+
+
+
+		<div class="parte2">
+			<div class="cadre">
+				<h1>code conex db</h1>
+				<p>
+					<?php<br> 
+					<br> 
+						define('HOST', 'localhost');<br> 
+						define('DB_NAME', 'test');<br> 
+						define('USER', 'root');<br> 
+						define('PASS', '');<br> 
+						<br> 
+						<br> 
+						try{<br> 
+							$db = new PDO("mysql:host=". HOST . ";dbname=" . DB_NAME, USER, PASS);<br> 
+							$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);<br> 
+						} catch(PDOExeption $e){<br> 
+							echo $e;<br> 
+						
+						}<br> 
+					<br> 	
+					?><br> 
+					
+				</p>
+								
+			</div>
+
+			<div class="btn">
+				<p>Close</p>
+			</div>
+		</div>
+		
+
+	</div>
+
+	<script src="all.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</head>

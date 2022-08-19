@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: whitesmoke;
+}
+
+p{
+	font-size: calc(2px + 1vw);
+}
+
+a{
+	text-decoration: none;
+	font-size: calc(2px + 1vw);
+}
+
+ion-icon{
+	font-size: calc(4px + 1vw);
+
+}
+
+@media screen and (max-width : 1300px){
+	p{
+		font-size: 15px;
+	}
+
+	a{
+		font-size: 15px;
+	}
+
+
+	ion-icon{
+		font-size: 17px;
+
+	}	
+
+	h1{
+		font-size: 15px !important;
+	}
+
+	h2{
+		font-size: 20px !important;
+	}
+
+
+}
+
+:root{
+	--background: #0B0D0F;
+	--vert:  #157353;
+	--bleu: #3B60A8;
+	--rouge: #B44B4C;
+}
+
+
+body{
+	display: flex;
+
+}
+
+
+
+div#nav{
+	background-color: var(--background);
+	border-right: 2px solid #0F1214;
+	height: 100vh;
+	flex-grow: 1;
+	user-select: none;
+}
+
+div#frame{
+	background-color: var(--background);
+	position: relative;
+	height: 100vh;
+	flex-grow: 12;
+}
+
+div#logo{
+	display: flex;
+	align-items: center;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+div#logo img{
+	width: 10%;
+	min-width: 30px;
+}
+
+div#logo h1{
+	color: whitesmoke;
+	font-size: calc(1px + 1vw);
+
+	margin-left: 10px;
+}
+
+div.navigation{
+	margin-top: 30px;
+	margin-left: 15%;
+}
+
+div.navigation div.home div{
+
+	display: flex;
+	align-items: center;
+	margin: 10px 0px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+div.navigation div.home div:hover{
+	transform: scale(1.1);
+}
+
+
+div.home div ion-icon{
+	margin-right: 10px;
+	color: #717477;
+}
+
+div.home div p{
+	color: #717477;
+
+}
+
+div.langage{
+	margin-top: 40px;
+}
+
+div.langage div.zone{
+	
+	overflow: hidden;
+	height: 40px;
+	transition: 0.3s;
+
+}
+
+.zoneextande{
+	height: 250px !important;
+}
+
+.zonerotate{
+	transform: rotate(90deg);
+}
+
+div.langage div.zone div{
+	display: flex;
+	align-items: center;
+	margin: 8px 0;
+	padding: 5px;
+	transition: 0.3s;
+	position: relative;
+	cursor: pointer;
+}
+
+div.langage div.zone div span{
+	position: absolute;
+	width: 0px;
+	height: 1px;
+	z-index: 1;
+	transition: 0.3s;
+}
+
+div.langage div.zone div p{
+	color: gray;
+	margin-left: 15px;
+}
+
+div.langage div.zone div span.s2{
+	
+	background-color: green;
+	top: 100%;
+	left: 0%;
+
+}
+
+div.langage div.zone div span.s1{
+	top: 0%;
+	left: 0%;
+	background-color: green;
+
+}
+
+div.langage div.zone div span.s3{
+	top: 0%;
+	left: 0%;
+	background-color: #2196f3;
+
+}
+
+
+div.langage div.zone div span.s4{
+	top: 100%;
+	left: 0%;
+	background-color: #2196f3;
+
+}
+
+div.langage div.zone div span.s5{
+	top: 0%;
+	left: 0%;
+	background-color: #C8C807;
+
+}
+
+div.langage div.zone div span.s6{
+	top: 100%;
+	left: 0%;
+	background-color: #C8C807;
+
+}
+
+div.langage div.zone div span.s7{
+	top: 0%;
+	left: 0%;
+	background-color: gray;
+
+}
+
+div.langage div.zone div span.s8{
+	top: 100%;
+	left: 0%;
+	background-color: gray;
+
+}
+
+
+div.langage div.zone div:hover span.s1, div.langage div.zone div:hover span.s2{
+	width: 150px;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #21963f;
+
+}
+
+div.langage div.zone div:hover span.s3, div.langage div.zone div:hover span.s4{
+	width: 150px;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #21963f;
+
+}
+
+div.langage div.zone div:hover span.s5, div.langage div.zone div:hover span.s6{
+	width: 150px;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #21963f;
+
+}
+
+div.langage div.zone div:hover span.s7, div.langage div.zone div:hover span.s8{
+	width: 150px;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #21963f;
+
+}
+
+
+div.langage div.zone div.title ion-icon{
+	font-size: 20px;
+	margin-left: 10px;
+	color: #717477;
+}
+
+div.langage div.zone div div{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 0px !important;
+}
+
+div.langage div.zone div a{
+	color: #717477;
+	margin-left: 15px;
+	text-decoration: none;
+}
+
+
+div.langage div.zone div.title p{
+	color: whitesmoke;
+	margin: 0;
+}
+
+
+
+div.langage div.zone div div.red{
+	border: 2px solid #17865F;
+}
+
+div.langage div.zone div div.blue{
+	border: 2px solid #3B5FA8;
+}
+
+div.langage div.zone div div.jaune{
+	border: 2px solid #C8C807;
+}
+
+div.langage div.zone div div.gris{
+	border: 2px solid gray;
+}
+
+div.exo{
+	margin-top: 30px;
+}
+
+div.title{
+	display: flex;
+	align-items: center;
+}
+
+div.title ion-icon{
+	font-size: 20px;
+	margin-left: 10px;
+	color: #717477;
+	transition: 0.3s;
+}
+
+
+
+div#search{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0px;
+}
+
+div#search div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1px;
+	border: 1px solid #717477;
+	border-radius: 20px;
+}
+
+div#search ion-icon{
+	color: #717477;
+	margin: 0px 10px;
+}
+
+div#search input{
+	border-radius: 20px;
+	color: whitesmoke;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 300px;
+}
+
+div.titletop{
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	user-select: none;
+}
+
+div.titletop h3{
+	color: gray;
+}
+
+div.mid{
+	display: flex;
+	flex-wrap: wrap;
+	height: 80vh;
+	width: 95%;
+	overflow-y: scroll;
+	margin: auto;
+}
+
+div.content{
+	margin: 10px;
+}
+
+div.contents{
+	display: flex;
+	border: 1px solid #3A3737;
+	border-radius: 10px;
+	
+}
+
+
+div.contents div.parte1{
+	background-color: #13171A;
+	border-radius: 10px;
+	min-width: 250px;
+	user-select: none;
+	cursor: pointer;
+	
+
+}
+
+
+
+div.tag{
+	display: flex;
+}
+
+div.tag p{
+	padding: 3px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-radius: 10px;
+	font-size: 12px !important;
+}
+
+div.tag p.tagrouge{
+
+	color: var(--rouge);
+	background-color: #261D20;
+
+}
+
+div.tag p.tagbleu{
+	color: var(--bleu);
+	background-color: #1B212C;
+}
+
+div.tag p.tagvert{
+	color: var(--vert);
+	background-color: #192424;
+}
+
+p.ptitre{
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: calc(1px + 1vw);
+
+}
+
+p.ps{
+	font-size: 12px;
+	margin: 0px 12px;
+	color: gray;
+}
+
+
+div.parte1 img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+
+}
+
+div.align{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 10px;
+	margin-bottom: 10px;
+}
+
+div.align ion-icon{
+	transform: rotate(-45deg);
+	color: gray;
+}
+
+
+
+div.parte2{
+
+	z-index: 1;
+	background-color: #192230;
+	position: absolute;
+	border-radius: 10px;
+	display: none;
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	height: 80%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+div.parte2 div.cadre{
+	overflow-y: scroll;
+	width: 95%;
+	height: 90%;
+	margin: auto;
+	margin-top: 5px;
+	border: 1px solid #3A3737;
+	border-radius: 10px;
+	
+}
+
+div.parte2 div.cadre p{
+	font-size: 14px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 11px;
+	color: gray;
+	line-height: 25px;
+}
+
+div.parte2 div.btn a{
+	text-decoration: underline !important;
+	margin: 10px;
+}
+
+
+.popp{
+	display: block !important;
+}
+
+div.parte2 div.cadre h1{
+	font-size: calc(3px + 1vw);
+	margin: 5px;
+}
+
+@media screen and (max-width : 1300px){
+
+	p.ptitre{
+		font-size: 15px;
+	}
+
+}
+
+div.btn{
+	display: flex;
+}
+
+div.btn p{
+	background-color: var(--rouge);
+	border-radius: 5px;
+	margin: 10px;
+	margin-left: 15px;
+	padding: 2px;
+	cursor: pointer;
+	user-select: none;
+}
