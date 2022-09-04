@@ -12,6 +12,14 @@ const zone =  document.querySelector("div.langage div.zone");
 const language = document.querySelector("div.zone div.title")
 language.addEventListener("click", open_nav);
 
+const btopopen = document.querySelector("div.btop ion-icon");
+const nav = document.querySelector("div#nav")
+btopopen.addEventListener("click", open_menu);
+
+function open_menu() {
+	nav.classList.toggle("opennavmenu")
+}
+
 function open_nav(){
 	zone.classList.toggle("zoneextande")
 	iconlanguage.classList.toggle("zonerotate")
