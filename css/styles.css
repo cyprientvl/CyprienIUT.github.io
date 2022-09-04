@@ -661,6 +661,14 @@ div.parte2 p{
 	font-size: 14px;
 }
 
+div.parte2 a{
+	text-align: center;
+	margin: 5px;
+	font-size: 14px;
+	color: var(--bleu);
+	text-decoration: underline;
+}
+
 div.btop ion-icon {
     display: none;
     position: absolute;
