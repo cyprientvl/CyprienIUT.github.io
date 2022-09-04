@@ -46,4 +46,13 @@ function open_nav(){
 	iconlanguage.classList.toggle("zonerotate")
 }
 
+
+const btopopen = document.querySelector("div.btop ion-icon");
+const nav = document.querySelector("div#nav")
+btopopen.addEventListener("click", open_menu);
+
+function open_menu() {
+	nav.classList.toggle("opennavmenu")
+}
+
 open_nav();

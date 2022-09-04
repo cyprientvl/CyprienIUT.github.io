@@ -524,3 +524,45 @@ div.btn p{
 	cursor: pointer;
 	user-select: none;
 }
+
+div.btop ion-icon {
+    display: none;
+    position: absolute;
+    z-index: 11;
+    font-size: 25px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 500px){
+
+	div#nav {
+    	position: absolute;
+   		transform: translateX(-100%);
+    	z-index: 10;
+    }
+
+    div#nav div#logo{
+    	margin-top: 50px;
+    }
+
+
+	div.btop ion-icon {
+    	display: block;
+	}
+
+	div#frame {
+    	width: 100%;
+	}
+
+	div#search {
+    	display: none;
+	}
+
+	div.titletop {
+   		margin-top: 50px;
+	}
+}
+
+.opennavmenu{
+	transform: translateX(0%) !important;
+}
